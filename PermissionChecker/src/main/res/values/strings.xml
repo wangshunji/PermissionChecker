@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="cancel">不行</string>
+    <string name="ok">好的</string>
+</resources>

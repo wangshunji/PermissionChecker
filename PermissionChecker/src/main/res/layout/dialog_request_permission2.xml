@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llRoot"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="16.0dip"
+    android:layout_marginRight="16.0dip"
+    android:background="@drawable/bg_round_white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25.0dip"
+        android:gravity="center"
+        android:text=""
+        android:textSize="20.0sp" />
+
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="24.0dip"
+        android:text=""
+        android:textSize="12.0sp" />
+
+    <!--<WrapHeightGridViewView&ndash;&gt;-->
+    <!--android:id="@+id/gvPermission"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="24.0dip"-->
+    <!--android:layout_marginRight="24.0dip"-->
+    <!--android:layout_marginTop="24.0dip"-->
+    <!--android:numColumns="1" />-->
+    <FrameLayout
+        android:id="@+id/llPermission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24.0dip">
+
+        <ImageView
+            android:id="@+id/iv_permission_icon"
+            android:layout_width="48.0dip"
+            android:layout_height="48.0dip"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/tv_permission_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60.0dip"
+            android:gravity="center" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/commom_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_dialog_left_white"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/base_text_color"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/commom_background" />
+
+        <TextView
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_dialog_right_white"
+            android:gravity="center"
+            android:text="@string/ok"
+            android:textColor="@color/base_color"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
