@@ -47,13 +47,7 @@
         android:debuggable="true"
         android:theme="@style/AppTheme"
         tools:ignore="HardcodedDebugMode">
-        <activity android:name="com.xiweinet.permissionchecker.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name="com.xiweinet.permissionchecker.MainActivity"/>
         <activity android:name="com.xiweinet.permissionchecker.Permission.PermissionActivity"/>
     </application>
 
